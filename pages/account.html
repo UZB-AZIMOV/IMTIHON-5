@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/i.webp">
-    <title>Cafe Street </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" href="/asset/logo.webp">
-
-    <link rel="stylesheet" href="../css/main.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/asset/logo.webp">
+<link rel="stylesheet" href="/css/main.min.css">
+    <title>My Account</title>
 </head>
-
 <body>
-     <!-- header start -->
-     <header class="header" id="header">
+    
+       <!-- header start -->
+       <header class="header" id="header">
         <nav class="navbar__top">
             <div class="container">
                 <div class="navbar__top__bag">
@@ -25,21 +23,29 @@
                         <p class="sum">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
                         <p>ShopNow</p>
                     </div>
-                    <p>English</p>
+                    <div>
+                    <select style="background-color: black;
+                    color: white;
+                    border: none;
+                    outline: none;" class="pro" name="" id="">
+                        <option value="">UZBEK</option>
+                        <option value="">ENGLISH</option>
+                        <option value="">RUS</option>
+                    </select>                
                 </div>
             </div>
         </nav>
         <div class="container">
             <nav class="navbar">
-                <a href="/index.html"><img src="/asset/Exclusive.svg" alt="logo"></a>
+                <img src="/asset/Exclusive.svg" alt="logo">
                 <ul class="navbar__collection">
                     <li class="navbar__item">
-                        <a href="/index.html" class="navbar__link">
+                        <a href="#" class="navbar__link">
                             <span>Home</span>
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a href="./contact.html" class="navbar__link">
+                        <a href="/pages/contact.html" class="navbar__link">
                             <span>Contact</span>
                         </a>
                     </li>
@@ -49,7 +55,7 @@
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a href="./sing.html" class="navbar__link">
+                        <a href="/pages/sing.html" class="navbar__link">
                             <span>Sign in </span>
                         </a>
                     </li>
@@ -60,31 +66,90 @@
                         <input class="navbar__input" type="text" placeholder="What are you looking for?">
                         <button class="navbar__but"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
-                  
-                    <a href="/pages/account.html"><button class="navbar__btn"><i class="fa-solid fa-user"></i></button></a>
-                     <button class="navbar__btn"><i class="fa-solid fa-cart-shopping"></i></button>
-
+                    <a href="/pages/account.html"><button class="navbar__btn nn"><i class="fa-solid fa-user "></i></button></a>                    <button class="navbar__btn"><i class="fa-solid fa-heart"></i></button>
+                    <button class="navbar__btn"><i class="fa-solid fa-cart-shopping"></i></button>
                 </div>
-                <div class="navbar__menu">
+                <div onclick="toggleShow()" class="navbar__menu ">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </nav>
         </div>
     </header>
-
-    <div class="hrr"></div>
+<div class="hr"></div>
     <!-- header end -->
 
-    <section class="data">
-        <div class="container">
-            <div class="content">
 
-            </div>
+    <!-- account start -->
+<div class="container">
+<div class="account__boxx">
+    <p class="account__item">Home / My Account</p>
+    <p class="account__item">Welcome! <span style="color: red;"> Md Rimel </span></p>
+</div>
+    <div class="account">
+<div class="account__gt">
+<p class="account__title">Manage My Account</p>
+<p class="account__text">My Profile</p>
+<p class="account__text">Address Book</p>
+<p class="account__text">My Payment Options</p>
+<p class="account__title">Orders</p>
+<p class="account__text">My Returns</p>
+<p class="account__text">My Cancellations</p>
+<p class="account__title">My WishList</p>
+
+</div>
+
+<div class="account__card">
+    <p class="account__titl">Edit Your Profile</p>
+
+    <div class="input__bag">
+
+        <div class="input__box">
+            <p class="account__title">First Name</p>
+            <input class="input__inp" type="text" placeholder="Md">
         </div>
+            <div class="input__box">
+                <p class="account__title">Last Name</p>
+                <input class="input__inp" type="text" placeholder="Rimel">
+    
+        </div>
+   
+</div>
 
 
-        
-<!-- footer start -->
+<div class="input__bag">
+
+        <div class="input__box">
+            <p class="account__title">Email</p>
+            <input class="input__inp" type="text" placeholder="rimel1111@gmail.com">
+    </div>
+
+    <div class="input__box">
+        <p class="account__title">Address</p>
+        <input class="input__inp" type="text" placeholder="Kingston, 5236, United State">
+    </div>
+
+</div>
+
+
+<p class="account__title">Password Changes</p>
+
+<input class="account__input" type="password" placeholder="Current Passwod">
+
+<input class="account__input" type="password" placeholder="New Passwod">
+
+<input class="account__input" type="password" placeholder="Confirm New Passwod">
+
+<div class="account__collection">
+    <p class="can" >Cancel</p>
+    <button class="account__btn">Save Changes </button>
+</div>
+    </div>
+
+</div>
+    <!-- account end -->
+
+
+    <!-- footer start -->
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
@@ -148,9 +213,5 @@
 </footer>
 
 <!-- footer end -->
-        <script src="../js/product.js"></script>
-
-    </section>
 </body>
-
 </html>

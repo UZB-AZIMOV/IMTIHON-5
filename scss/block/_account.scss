@@ -1,0 +1,189 @@
+.account{
+    margin-top: 50px;
+ display: flex;
+ justify-content: space-between;
+    &__boxx{
+display: flex;
+justify-content: space-between;
+}
+&__collection{
+    margin-top: 50px;
+    justify-content: end;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    align-items: center;
+}
+&__title{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+&__titl{
+    font-size: 25px;
+    font-weight: 600;
+    color: red;
+}
+&__input{
+    border: none;
+    width: 100%;
+    padding:  10px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top: 15px;
+    background-color: 
+    #F5F5F5;
+}
+&__gt{
+    width: 380px;
+}
+
+&__card{
+    width: 700px;
+    padding: 40px 80px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(164, 164, 164, 0.4);
+}
+
+&__text{
+    margin-top:10px;
+    margin-left: 20px;
+    color: rgba(81, 80, 80, 0.6);
+    transition: .9s;
+    &:hover{
+        color: red;
+    }
+}
+
+&__btn{
+    border: none;
+    background-color: red;
+    padding: 15px 50px;
+    color: white;
+    font-size: 18px;
+    transition: .9s;
+    &:hover{
+        background-color: black;
+        color: red;
+    }
+}
+
+.can{
+    font-size: 20px;
+    font-weight: 500;
+    transition: .9s;
+    cursor: pointer;
+    &:hover{
+        color: red;
+    }
+}
+
+
+}
+.nn{
+    background-color: red;
+    color: white;
+}
+
+
+
+.input__bag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input__inp{
+    border: none;
+}
+
+.input__inp{
+    border: none;
+    width: 250px;
+    padding:  10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: 
+    #F5F5F5;
+}
+
+
+
+
+
+
+@media ( max-width:900px){
+    .account{
+        flex-direction: column;
+        gap: 40px;
+
+        &__gt{
+            width: 50%;
+        }
+        &__card{
+            width: 100%;
+            padding: 20px
+            40px;
+        }
+    }
+
+}
+
+
+
+
+
+@media ( max-width:720px){
+    .account{
+       
+        flex-direction: column;
+        gap: 40px;
+        
+
+        &__gt{
+            width: 80%;
+        }
+      
+    }
+
+    
+.input__bag{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input__box{
+    width: 100%;
+}
+.input__inp{
+    border: none;
+    width: 100%;
+    padding:  10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: 
+    #F5F5F5;
+}
+}
+
+
+@media ( max-width:450px){
+    .account{
+        &__collection{
+            justify-content: left;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        &__btn{
+            border: none;
+            background-color: red;
+            padding: 10px 20px;
+            color: white;
+            font-size: 18px;
+        }
+        &__card{
+            padding: 20px;
+        }
+    }
+}
+
