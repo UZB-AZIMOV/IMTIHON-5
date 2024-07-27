@@ -1,0 +1,212 @@
+.about{
+    padding: 50px 0;
+    &__wrapper{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__title{
+        font-size: 54px;
+        font-weight: 700;
+        margin: 80px 0 30px 0;
+    }
+
+    &__text{
+        margin: 20px 0 0 0;
+        font-size: 16px;
+        font-weight: 500;
+        width: 500px;
+    }
+
+    &__img{
+        width: 550px;
+    }
+}
+
+.about__collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__card{
+        margin-top: 30px;
+        text-align: center;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        padding:30px 20px;
+        width: 270px;
+        height: 230px;
+        transition: .6s;
+        &:hover{
+            border: 2px solid red;
+            background-color: red;
+            color: white;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-3%);
+        }
+    }
+    &__title{
+        margin-top: 10px;
+        font-size: 28px;
+        font-weight: 700;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+
+
+.about__bag{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    &__title{
+        margin-top: 30px;
+        font-size: 32px;
+        font-weight: 600;
+        margin-left: 10px;
+
+    }
+    &__item{
+        margin-left: 10px;
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__box{
+        margin-left: 10px;
+        margin-top: 10px;
+        display: flex;
+        gap: 20px;
+        font-size: 25px;
+    }
+ 
+
+    &__card{
+        margin-top: 10px;
+        padding:  0 0 10px 0;
+        transition: .3s;
+        &:hover{
+            border-radius: 10px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-3%);
+        }
+    }
+}
+
+
+
+
+@media (max-width:1160px){
+    .about__collection{
+    gap: 50px;
+    
+    &__card{
+        width: calc( 33.3% - 33.3px);
+    }
+    }
+    
+}
+
+
+
+@media (max-width:1090px){
+    .about{
+        &__wrapper{
+            margin-top: 0;
+            flex-direction: column;
+            gap: 50px;
+        }
+        &__title{
+            margin-top: 40px;
+        }
+        &__card{
+            width: 100%;
+        }
+
+        &__text{
+            width: 70%;
+        }
+        &__img{
+            width: 100%;
+        }
+    }
+
+    .about__bag{
+        gap: 30px;
+        &__card{
+            width:  calc( 50%
+             - 15px);
+        }
+    }
+
+    
+    }
+
+    
+    
+@media (max-width:870px){
+    .about__collection{
+    gap: 40px;
+    
+    &__card{
+        width: calc( 50% - 20px);
+    }
+    }
+    
+}
+
+
+
+
+
+@media (max-width:710px){
+    .about__bag{
+        flex-direction: column;
+
+    }
+
+    .about__bag__card{
+        width: 100%;
+    }
+}
+ 
+
+    
+
+@media (max-width:600px){
+    .about{
+        &__title{
+            font-size: 42px;
+        }
+        &__text{
+            width: 100%;
+        }
+    }
+  
+    }
+
+    
+    
+@media (max-width:600px){
+    .about__collection{
+  flex-direction: column;
+    
+    &__card{
+        margin-top: 0;
+        width: 100%;
+    }
+    }
+    
+}
+
+
+
+     

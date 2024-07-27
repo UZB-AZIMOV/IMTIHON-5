@@ -1,0 +1,117 @@
+.contact{
+    padding: 80px 0 30px 0;
+
+    &__wrapper{
+        padding: 60px 0 30px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__bag{
+        align-items: center;
+        display: flex;
+        gap: 20px;
+    }
+    &__title{
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    &__text{
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__card{
+        border-radius: 8px;
+        padding:40px 20px;
+        box-shadow: 0 1px 10px rgba(75, 75, 75, 0.2);
+    }
+    &__box{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inp{
+        padding:10px 15px;
+        border: none;
+        margin: 0 20px;
+        background-color:
+        #F5F5F5;
+        border-radius: 5px;
+    }
+    &__big{
+        padding: 10px 20px;
+        width: 100%;
+        background-color:
+        #F5F5F5;
+        border: none;
+        outline: none;
+    }
+    &__btm{
+        padding-top: 50px;
+        width: 100%;
+        text-align: right;
+    }
+    &__btn{
+        border: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: red;
+        color: white;
+    }
+}
+
+.cut{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+.cad{
+    width: 350px;
+}
+.rr{
+    margin: 30px 0;
+}
+
+
+
+
+
+
+
+@media ( max-width:1125px){
+    .contact{
+        &__wrapper{
+            gap: 50px;
+            flex-direction: column;
+            
+        }
+        &___card{
+            width: 100%;
+        }
+    }
+    }
+
+    
+    
+
+ @media ( max-width:730px){
+    .contact{}
+    .cad{
+        width: 80%;
+    }
+ }
+
+ @media ( max-width:730px){
+    .contact{
+        &__box{
+            flex-direction: column;
+            gap: 30px;
+        }
+        &__btm{
+            text-align: left;
+        }
+    }
+    .cad{
+        width: 100%;
+    }
+}

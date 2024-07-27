@@ -1,0 +1,110 @@
+.footer{
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    padding: 80px 0 40px 0;
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__card{
+        width: 200px;
+    }
+
+    &__title{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    &__text{
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        cursor: pointer;
+        transition: 1s;
+        &:hover{
+            color: gold;
+        }
+    }
+    &__div{
+        background-color: black;
+        padding: 5px;
+        display: flex;
+        margin-top: 10px;
+        border: 2px solid white;
+        width: 200px;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+    &__inp{
+        background-color: black;
+        color: white;
+        width: 90%;
+outline: none;
+padding: 5px 10px;
+border: none;
+    }
+
+    &__btn{
+        background-color: black;
+        color: white;
+        border: none;
+        margin-left: 5px;
+    }
+    &__bag{
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.fa-paper-plane{
+    font-size: 20px;
+}
+
+.footer__logo__bag{
+margin-top: 10px;
+font-size: 30px;
+    display: flex;
+    gap: 10px;
+    transition: 1s;
+}
+.hr{
+    margin: 30px;
+    height: 1px;
+background-color: #ddd;
+}
+
+.hrb{
+    text-align: center;
+    color:#ddd9;
+}
+
+@media (max-width:1000px){
+    .footer{
+        &__wrapper{
+            gap: 80px;
+        }
+    }
+    }
+
+
+
+    
+
+@media (max-width:580px){
+    .footer{
+        &__wrapper{
+            flex-direction: column;
+            gap: 40px;
+        }
+        &__card{
+            width: 100%;
+        }
+        &__title{
+            margin-bottom: 10px;
+        }
+    }
+    }

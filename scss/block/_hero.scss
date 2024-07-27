@@ -1,0 +1,190 @@
+.hero{
+    margin-top: 30px;
+    background-color: black;
+    padding: 60px;
+    color: white;
+    font-size: 20px;
+    &__bag{
+        margin-top: 50px;
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        align-items: center;
+    }
+
+
+    &__title{
+        margin-top: 10px;
+        font-size: 48px;
+        font-weight: 600;
+        width: 280px;
+    }
+    &__btn{
+        margin-top: 50px;
+        background-color: black;
+        border: none;
+        color: white;
+        align-items: center;
+        font-size: 18px;
+        padding:0  10px 10px 10px;
+        border-radius: 20px;
+        transition: 1s;
+        &:hover{
+            background-color: white;
+            padding:0  10px 10px 10px;
+            border-radius: 20px;
+            color: black;
+        }
+    }
+&__wrapper{
+    display: flex;
+    gap: 100px;
+}
+}
+
+.d{
+    display: none;
+    border-color: black;
+    padding: 0;
+}
+.fa-apple{
+    font-size: 50px;
+}
+
+.fa-arrow-right{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+.skeleton,
+.wrapper {
+    padding: 50px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skeleton__item,
+.card {
+    width: 300px;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.skeletton__images {
+    width: 100%;
+    height: 250px;
+    background: #ddd;
+    border-radius: 14px;
+}
+
+.skeleton__line {
+    width: 100%;
+    height: 30px;
+    background: #ddd;
+    margin-top: 14px;
+    border-radius: 6px;
+
+}
+
+.skeleton__line:nth-child(3) {
+    width: 80%;
+}
+
+.skeleton__line:nth-child(4) {
+    width: 60%;
+}
+
+.skelete__inme {
+    background: linear-gradient(90deg, #ddd, #f7f7f7, #ddd);
+    background-size: 200%;
+    animation: skeleton 1s linear 0s infinite;
+}
+
+@keyframes skeleton {
+    to {
+        background-position: 200%;
+    }
+}
+
+@media ( max-width:1000px){
+    .hero{
+padding: 30px;
+        &__title{
+            width: 100%;
+        }
+        &__wrapper{
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__card{
+            width: 100%;
+            margin: auto;
+        }
+    }
+.d{
+    display: block;
+    background-color: black;
+    text-align: center;
+
+}
+.dd{
+    display: none;
+}
+
+
+}
+
+
+
+
+
+
+@media ( max-width:1000px){
+    .hero{
+        padding: 10px 20px;
+        &__title{
+            width: 100%;
+            font-size: 32px;
+        }
+    }
+    .cardd {
+        width: 100%;
+    }
+    
+    }
+
+
+    .ar{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+        background-color: red;
+        max-width: 450px;
+        padding: 20px;
+        border-radius: 10px;
+        &__title{
+            font-size: 36px;
+            font-weight: 600;
+            color: white;
+        }
+
+        &__text{
+            margin-top: 5px;
+            color:white;
+            font-size: 36px;
+            font-weight: 700;
+        }
+    }

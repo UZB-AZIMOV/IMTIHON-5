@@ -1,0 +1,201 @@
+.arrival{
+    margin-top: 50px;
+
+    &__div{
+        display: flex;
+        gap: 10px;
+        color: red;
+    }
+    &__fea{
+        font-size: 20px;
+    }
+    &__title{
+        margin: 50px 0;
+        font-size: 36px;
+        font-weight: 700;
+        width: 230px;
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.red{
+    width: 15px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: red;
+}
+
+
+.game:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.game{
+    background: url("/asset/ps5-slim-goedkope-playstation_large\ 1.png")no-repeat;
+    height: 530px;
+    background-color: black;
+    width: 48%;
+    color: white;
+    transition: 1s;
+    
+    &__div{
+        padding:  360px 20px 0 20px;
+    }
+
+    &__title{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    &__text{
+        font-weight: 400;
+        width: 250px;
+        margin: 10px 0;         
+    }
+   
+    &__btn{
+        background-color: black;
+        border: none;
+        color: white;
+        font-size: 18px;
+        padding:1px 5px;
+        border-radius: 5px;
+    }
+
+  
+}
+
+.arrival__card{
+    flex-direction: column;
+    width: 49%;
+}
+
+.arrival__book{
+    background: url("/asset/attractive-woman-wearing-hat-posing-black-background\ 1.png")no-repeat center;
+    height: 285px;
+    width:100%;
+    background-color: black;
+    transition: 1s;
+}
+
+.arrival__card{
+    width:49%;
+    gap: 30px;
+}
+.arrival__bag{
+    background: url("/asset/Frame\ 707.png")no-repeat center;
+    height: 225px;
+    width:100px;
+    background-color: black;
+}
+
+.box__img{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+
+}
+.bag__card{
+    background: url("/asset/Frame\ 707.png")no-repeat center;
+    height: 220px;
+    width:50%;
+    background-color: black;
+    transition: 1s;
+
+}
+
+.book__div{
+    padding: 150px 0 10px 20px;
+    color: white;
+}
+
+.book__title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.book__text{
+    width: 250px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.bag__box{
+    text-align: right;
+    background: url("/asset/Frame\ 706.png")no-repeat center;
+    height: 220px;
+    width:50%;
+    background-color: black;
+    transition: 1s;
+}
+
+.blog{
+    padding-top: 110px;
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+    &__title{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &__text{
+        margin: 5px 0;
+        font-size: 16px;
+        font-weight: 100;
+    }
+}
+
+
+.bag__box:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+
+.bag__card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+
+
+.arrival__book:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+@media (max-width:930px){
+    .arrival{
+        &__wrapper{
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+    .game{
+        width: 100%;
+    }
+    .arrival__card{
+        width: 100%;
+    }
+}
+
+@media (max-width:430px){
+  
+    .box__img{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .bag__card{
+        width: 100%;
+    }
+    .bag__box{
+        width: 100%;
+    }
+    .book__title{
+        font-size: 20px;
+    }
+    }

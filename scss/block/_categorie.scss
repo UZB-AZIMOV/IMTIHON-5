@@ -1,0 +1,111 @@
+.categorie{
+    
+    &__collection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 50px 0;
+    }
+
+    &__title{
+        font-size: 35px;
+        width: 100%;
+        font-weight: 800;
+    }
+    &__card{
+        margin-top: 30px;
+        width: 170px;
+        height: 150px;
+        text-align: center;
+        padding-top: 20px;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        transition: 1s;
+        &:hover{
+            border: 2px solid red;
+background-color:red;
+color: white;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+transform: translateY(-3%);
+        }
+    }
+
+    &__text{
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+}
+
+
+.vib{
+
+    margin: 50px 0;
+}
+
+
+.fa-camera{
+    font-size: 50px;
+}
+
+
+
+
+
+@media (max-width:1100px) {
+    .categorie{
+
+        &__collection{
+            gap: 40px;
+        }
+        &__card{
+            margin-top: 10px;
+            width: calc(33.3% - 26.6px);
+        }
+    }
+}
+
+
+
+@media (max-width:700px) {
+    .categorie{
+        &__title{
+            font-size: 36px;
+            font-weight: 700;
+        }
+        &__collection{
+            gap: 30px;
+        }
+        &__card{
+            margin-top: 10px;
+            width: calc(50% - 15px);
+        }
+    }
+}
+
+
+
+
+
+@media (max-width:480px) {
+    .categorie{
+        &__title{
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        &__collection{
+            flex-direction: column;
+            gap: 30px;
+        }
+        &__card{
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
